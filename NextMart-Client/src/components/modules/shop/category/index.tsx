@@ -6,10 +6,9 @@ import { ColumnDef } from "@tanstack/react-table";
 import Image from "next/image";
 import { Trash } from "lucide-react";
 import { useState } from "react";
-
+import DeleteConfirmationModal from "@/components/ui/core/NMModal/DeleteConfirmationModal";
 import { toast } from "sonner";
 import { deleteCategory } from "@/services/Category";
-import DeleteConfirmationModal from "@/components/ui/core/NMModal/DeleteConfirmationModal";
 
 type TCategoriesProps = {
   categories: ICategory[];
